@@ -49,6 +49,30 @@ namespace Kuntosali
             double rasvaProsentti = (1.51f * bmi) - (0.70f * this.ika) - 3.6f + 1.4f;
             Console.WriteLine("Rasvaprosentti on: " + rasvaProsentti);
         }
+
+        // Tytön rasvaprosentti
+        public void TytonRasvaProsentti()
+        {
+            double bmi = this.paino / (this.pituus * this.pituus);
+            double rasvaProsentti = (1.51f * bmi) - (0.70f * this.ika) + 1.4f;
+            Console.WriteLine("Rasvaprosentti on: " + rasvaProsentti);
+        }
+
+        // Miehen rasvaprosentti
+        public void MiehenRasvaProsentti()
+        {
+            double bmi = this.paino / (this.pituus * this.pituus);
+            double rasvaProsentti = (1.2f * bmi) - (0.23f * this.ika) - 10.8f -5.4f;
+            Console.WriteLine("Rasvaprosentti on: " + rasvaProsentti);
+        }
+
+        // Naisen rasvaprosentti
+        public void NaisenRasvaProsentti()
+        {
+            double bmi = this.paino / (this.pituus * this.pituus);
+            double rasvaProsentti = rasvaProsentti = (1.2f * bmi) - (0.23f * this.ika) - 5.4f;
+            Console.WriteLine("Rasvaprosentti on: " + rasvaProsentti);
+        }
     }
     class Program
     {
@@ -100,6 +124,7 @@ namespace Kuntosali
             Console.WriteLine("Asiakkaan 1 tiedot ovat:");
             asiakas1.TulostaHenkilötiedot();
             asiakas1.LaskeBMI();
+            asiakas1.PojanRasvaProsentti();
             Console.ReadLine();
         }
     }
