@@ -62,7 +62,7 @@ namespace Kuntosali
         public void MiehenRasvaProsentti()
         {
             double bmi = this.paino / (this.pituus * this.pituus);
-            double rasvaProsentti = (1.2f * bmi) - (0.23f * this.ika) - 10.8f -5.4f;
+            double rasvaProsentti = (1.2f * bmi) + (0.23f * this.ika) - 10.8f -5.4f;
             Console.WriteLine("Rasvaprosentti on: " + rasvaProsentti);
         }
 
@@ -70,7 +70,7 @@ namespace Kuntosali
         public void NaisenRasvaProsentti()
         {
             double bmi = this.paino / (this.pituus * this.pituus);
-            double rasvaProsentti = rasvaProsentti = (1.2f * bmi) - (0.23f * this.ika) - 5.4f;
+            double rasvaProsentti = rasvaProsentti = (1.2f * bmi) + (0.23f * this.ika) - 5.4f;
             Console.WriteLine("Rasvaprosentti on: " + rasvaProsentti);
         }
     }
