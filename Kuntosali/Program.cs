@@ -132,10 +132,12 @@ namespace Kuntosali
                 if (ika < 17)
                 {
                     asiakas1.PojanRasvaProsentti();
+                    Console.WriteLine("Poika");
                 }
                 else
                 {
                     asiakas1.MiehenRasvaProsentti();
+                    Console.WriteLine("Mies");
                 }
             }
             else
@@ -143,10 +145,12 @@ namespace Kuntosali
                 if (ika < 17)
                 {
                     asiakas1.TytonRasvaProsentti();
+                    Console.WriteLine("Tyttö");
                 }
                 else
                 {
                     asiakas1.NaisenRasvaProsentti();
+                    Console.WriteLine("Nainen");
                 }
             }
             Console.ReadLine();
