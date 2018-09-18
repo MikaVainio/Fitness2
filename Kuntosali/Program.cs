@@ -124,7 +124,31 @@ namespace Kuntosali
             Console.WriteLine("Asiakkaan 1 tiedot ovat:");
             asiakas1.TulostaHenkilötiedot();
             asiakas1.LaskeBMI();
-            asiakas1.PojanRasvaProsentti();
+
+            // Tutkitaan onko asiakas miespuolinen
+            if (mies == true)
+            {
+                // Tutkitaan onko ikä alle 17
+                if (ika < 17)
+                {
+                    asiakas1.PojanRasvaProsentti();
+                }
+                else
+                {
+                    asiakas1.MiehenRasvaProsentti();
+                }
+            }
+            else
+            {
+                if (ika < 17)
+                {
+                    asiakas1.TytonRasvaProsentti();
+                }
+                else
+                {
+                    asiakas1.NaisenRasvaProsentti();
+                }
+            }
             Console.ReadLine();
         }
     }
